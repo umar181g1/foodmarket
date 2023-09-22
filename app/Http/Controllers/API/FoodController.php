@@ -11,7 +11,7 @@ class FoodController extends Controller
 {
     public function all(Request $request){
         $id = $request->input('id');
-        $limit = $request->input('limit', 6);
+        $limit = $request->input('limit', 10);
         $id = $request->input('id');
         $name = $request->input('name');
         $types = $request->input('types');

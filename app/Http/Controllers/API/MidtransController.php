@@ -6,7 +6,7 @@ use Midtrans\Config;
 use Midtrans\Notification;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Models\Transactions;
+use App\Models\Transaction;
 
 class MidtransController extends Controller
 {
@@ -32,7 +32,7 @@ class MidtransController extends Controller
 
         //cari transaksi midtrans dengan id
 
-        $transaction = Transactions::findOrFail($order_id);
+        $transaction = Transaction::findOrFail($order_id);
 
 
         // handle notifikasi midtrans
